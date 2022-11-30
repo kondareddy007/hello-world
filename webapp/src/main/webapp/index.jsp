@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New user Register</h1>
+    <h1>New user Register for kubernetes deploy:</h1>i 
     <p>Please fill in this form to create an new account.</p>
     <hr>
     <label for="name"><b>name</b></label>
