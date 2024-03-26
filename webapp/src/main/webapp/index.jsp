@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New user is kondareddy to register</h1>i 
+    <h1>This is kondareddy to register</h1>
     <p>this form to create an new account.</p>
     <hr>
     <label for="name"><b>name</b></label>
