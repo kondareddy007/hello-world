@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        PATH = "/opt/homebrew/Cellar/maven/3.9.4/libexec:$PATH"
+        PATH = "/opt/homebrew/Cellar/maven/3.9.4/libexec/bin:$PATH"
     }
     stages{
         stage('Git Checkout'){
