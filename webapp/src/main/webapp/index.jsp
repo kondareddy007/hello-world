@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>Hi chari , I am displaying third line in this page</h1>
+    <h1>Hi chari</h1>
     <p>this form to create an new account.</p>
     <hr>
     <label for="name"><b>name</b></label>
