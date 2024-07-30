@@ -1,21 +1,17 @@
-pipeline{
-    agent any
-    environment{
-        PATH = "/opt/homebrew/Cellar/maven/3.9.4/libexec/bin:$PATH"
-    }
-    stages{
-        stage('Git Checkout'){
-            steps{
-                git credentialsId: 'github', url: 'https://github.com/kondareddy007/hello-world.git'
-            }
-        }
-        stage('Maven build'){
-            steps{
-                sh "mvn clean install"
-            }
-        }
-        
-            
-        
-    }
+pipeline {
+     agent {
+         node {
+             label 'maven-agent'
+         }
+     }
+environment {
+    PATH = "/opt/apache-maven-3.9.8/bin:$PATH"
+}     
+     stages {
+         stage('Build') {
+             steps {
+                sh 'mvn clean deploy'
+             }
+         }
+     }    
 }
